@@ -1,0 +1,42 @@
+body {
+    background-color: #f2d5b5; /* สีพื้นหลังครีมส้ม */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.main-title {
+    color: #7a503a; /* สีน้ำตาลเข้ม */
+    font-size: 4rem;
+    -webkit-text-stroke: 2px white; /* ขอบสีขาวรอบตัวอักษร */
+    margin-bottom: 2px;
+}
+
+.illustration img {
+    width: 500px;
+    margin-bottom: px;
+}
+
+.enter-button {
+    display: inline-block;
+    background-color: #7a503a;
+    color: white;
+    padding: 15px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 0px #3d281d;
+    transition: transform 0.2s;
+}
+
+.enter-button:hover {
+    transform: scale(1.05);
+    
+}

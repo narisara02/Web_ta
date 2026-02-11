@@ -1,0 +1,50 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #7a503a;
+}
+
+.bio-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    max-width: 900px;
+}
+
+.polaroid {
+    background: white;
+    padding: 15px 15px 60px 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: rotate(-3deg);
+}
+
+.polaroid img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bio-header {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.next-btn {
+    margin-top: 20px;
+    display: inline-block;
+    color: #7a503a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
