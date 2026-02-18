@@ -1,0 +1,114 @@
+/* =========================
+   CSS VARIABLES
+========================= */
+:root {
+    --brown-dark: #5c4433;
+    --brown-medium: #a98263;
+    --brown-light: #9c733e;
+    --cream: #f6f1eb;
+    --white-soft: #ffffff;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: var(--cream);
+    color: var(--brown-dark);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* =========================
+   FLOATING DECOR
+========================= */
+#floating-decor {
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    background: var(--brown-light);
+    border-radius: 50%;
+    top: -20%;
+    right: -15%;
+    opacity: 0.3;
+    filter: blur(80px);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    text-align: center;
+    padding: 3rem 5%;
+    background: var(--white-soft);
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    width: min(90%, 500px);
+}
+
+/* =========================
+   TITLE
+========================= */
+.main-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.illustration img {
+    width: 70%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 2rem;
+    transition: transform 0.4s ease;
+}
+
+.illustration img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.enter-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--brown-medium);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.enter-button:hover {
+    background: var(--brown-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 1.6rem;
+    }
+
+    .illustration img {
+        width: 85%;
+    }
+}

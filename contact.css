@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ddb396, #ebedee);
+}
+
+/* กล่องหลัก */
+.contact-box {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 320px;
+    transition: 0.3s;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+}
+
+/* หัวข้อ */
+.contact-header {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #aaa;
+    margin: 8px 0 15px 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+/* รายการ */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    background-color: #f8f8f8;
+}
+
+/* ไอคอน */
+.icon {
+    font-size: 20px;
+}
+
+/* ข้อความ */
+.text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ปุ่มกลับ */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f8d7da;
+    color: #333;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #f5c2c7;
+}
